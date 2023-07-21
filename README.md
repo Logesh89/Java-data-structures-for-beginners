@@ -1,3 +1,2 @@
-# Java-data-structures-for-beginners
-
+# Java-data-structures-for-beginner
 
