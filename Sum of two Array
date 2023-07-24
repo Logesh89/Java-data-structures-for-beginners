@@ -1,0 +1,20 @@
+import java.util.*;
+
+class Main {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the length of the Array: ");
+        int a = sc.nextInt();
+        int[] arr = new int[a];
+        System.out.println("Elements of the Array are: ");
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = sc.nextInt();
+        }
+        int sum = 0;
+        System.out.println("Sum of the elements are:");
+        for (int i : arr) {
+            sum += i; // Add the current element to the sum
+        }
+        System.out.println(sum); // Print the sum after the loop is finished
+    }
+}
