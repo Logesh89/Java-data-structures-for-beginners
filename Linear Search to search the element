@@ -1,0 +1,46 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    Scanner sc=new Scanner(System.in);
+	    int n=sc.nextInt();
+	    System.out.println("Enter the Array elements are: ");
+	    int[] nums=new int[n];
+	    for(int i=0;i<nums.length;i++){
+	        nums[i]=sc.nextInt();
+	    }
+	    System.out.print("Enter the target:");
+	    int target=sc.nextInt();
+	    int ans=linearSearch(nums,target);
+	    System.out.print("Result:"+ans);
+	    
+	}
+	static int linearSearch(int[] arr, int target){
+	    if(arr.length==0){
+	        return -1;
+	    }
+	    for(int i=0;i<arr.length;i++){
+	        int element=arr[i];
+	        if(element==target){
+	            return i;
+	        }
+	    }
+	    //This return will execute when the none of the return is executed.
+	    return -1;
+	}
+}
+
+
+
+
+/*
+5
+Enter the Array elements are:
+-12
+3
+4
+5
+Enter the target:5
+Result:4
+*/
